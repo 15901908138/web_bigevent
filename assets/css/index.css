@@ -1,0 +1,15 @@
+.layui-footer {
+    text-align: center;
+    font-size: 12px;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
+.layui-body {
+    overflow: hidden;
+}
+.layui-icon,
+.iconfont {
+    margin-right: 8px; 
+}
