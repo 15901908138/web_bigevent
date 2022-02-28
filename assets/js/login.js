@@ -64,10 +64,10 @@ $(function () {
                 layer.msg("登录成功")
                 // 需要token 才能获取有访问权限的页面
                 // 将登录成功得到的 token 字符串保存到localStorage 中；
-                // console.log(res.token)
+                console.log(res.token)
                 localStorage.setItem("token", res.token)
                 // 跳转到后台主页  
-                location.href = "./index.html"
+                location.href = "/index.html"
             }
         })
     })
