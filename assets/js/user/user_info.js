@@ -1,4 +1,5 @@
 $(function() {
+    // <!-- 这是自己写的查问题 -->
     // 表单验证
     var form = layui.form
     var layer = layui.layer
@@ -51,9 +52,10 @@ $(function() {
                 }
                 layer.msg('更新用户信息成功！')
                 // 调用父页面的 方法，重新渲染用户的头像和用户的信息
-                $(windon).parent().getUserInfo()
+                // $(window).parent.getUserInfo()
+                window.parent.getUserInfo()
+                
             }
         })
     })
-
 })

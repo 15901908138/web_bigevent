@@ -13,19 +13,21 @@
 </head>
 
 <body>
+    <!-- 这是自己写的查问题 -->
     <!-- 卡片区域 -->
     <div class="layui-card">
         <div class="layui-card-header">修改用户信息</div>
         <!-- 表单区域 -->
         <div class="layui-card-body">
-            <!-- 这是隐藏域 -->
-            <input type="hidden" name="id"/>
             <!-- lay-filter="formUserInfo" 确定是哪个表单 -->
             <form class="layui-form" lay-filter="formUserInfo">
+                <!-- 这是隐藏域  -->
+                <input type="hidden" name="id" />
                 <div class="layui-form-item">
                     <label class="layui-form-label">登录名称</label>
                     <div class="layui-input-block">
-                        <input type="text" name="username" required lay-verify="required" placeholder="请输入登录名称" autocomplete="off" class="layui-input" readonly>
+                        <input type="text" name="username" required lay-verify="required" placeholder="请输入登录名称" autocomplete="off" class="layui-input"
+                            readonly>
                     </div>
                 </div>
                 <div class="layui-form-item">
@@ -49,15 +51,16 @@
             </form>
         </div>
     </div>
+
     <!-- 导入 layui.js -->
     <script src="../assets/lib/layui/layui.all.js"></script>
     <!-- 导入 jquery.js -->
     <script src="../assets/lib/jquery.js"></script>
-     <!-- 导入 baseAPI -->
-     <script src="../assets/js/baseAPI.js"></script>
+    <!-- 导入 baseAPI -->
+    <script src="../assets/js/baseAPI.js"></script>
     <!-- 导入 自己的 user_info.js -->
     <script src="../assets/js/user/user_info.js"></script>
-    
+
 </body>
 
 </html>

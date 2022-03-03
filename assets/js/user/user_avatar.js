@@ -1,4 +1,5 @@
 $(function () {
+    // 自己写的错误HTML
     // 1.1 获取裁剪区域的 DOM 元素
     var $image = $('#image')
     // 1.2 配置选项
@@ -47,7 +48,9 @@ $(function () {
             $.ajax({
                 method: 'POST',
                 url: '/my/update/avatar',
-                avatar: dataURL,
+                data: {
+                    avatar: dataURL
+                },
                 success: function(res) {
                     if(res.status !== 0) {
                         return layui.layer.msg('头像上传失败！')
